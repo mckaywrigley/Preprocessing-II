@@ -168,6 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+}
 .nav {
   border-bottom: 2px dashed #C0C0C0;
   padding-bottom: 20px;
@@ -176,14 +181,46 @@ img {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 550px) {
+  .nav {
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+}
 h1 {
   margin-right: 250px;
+}
+@media (max-width: 800px) {
+  h1 {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 550px) {
+  h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
 }
 nav a {
   text-decoration: none;
   color: black;
   margin: 0 20px;
   font-size: 18px;
+}
+@media (max-width: 800px) {
+  nav a {
+    font-size: 15px;
+  }
+}
+@media (max-width: 550px) {
+  nav a {
+    width: 25%;
+    font-size: 18px;
+    margin: 0 25px;
+  }
 }
 .footer {
   width: 100%;
@@ -214,17 +251,40 @@ nav a {
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+  padding: 0;
+}
+@media (max-width: 550px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 550px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding: 0;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 550px) {
+  .home .content-section .img-content img {
+    width: 100%;
+    padding: 0;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 550px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -238,6 +298,11 @@ nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 550px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -247,9 +312,20 @@ nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 550px) {
+  .home .content-pick {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 550px) {
+  .home .content-pick .destination {
+    width: 85%;
+  }
 }
 .home .btn {
   border: 1px solid black;
@@ -259,4 +335,5 @@ nav a {
   background-color: #006666;
   border-radius: 10px;
   font-size: 16px;
+  cursor: pointer;
 }
