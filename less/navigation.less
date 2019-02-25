@@ -1,1 +1,47 @@
-// Navigation Styles here
+.nav {
+    border-bottom: 2px dashed @navigation-border;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    .center();
+
+    @media @mobile {
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+    }
+}
+
+h1 {
+    margin-right: 250px;
+
+    @media @tablet {
+        margin-right: 15px;
+    }
+
+    @media @mobile {
+        width: 100%;
+        .center();
+        margin-bottom: 10px;
+    }
+}
+
+nav {
+
+    a {
+        text-decoration: none;
+        color: black;
+        margin: 0 20px;
+        font-size: 18px;
+
+        @media @tablet {
+            font-size: 15px;
+        }
+
+        @media @mobile {
+            width: 25%;
+            font-size: 18px;
+            margin: 0 25px;
+        }
+    }
+}
